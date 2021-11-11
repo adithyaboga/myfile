@@ -1,0 +1,27 @@
+sudo apt update -y
+sudo apt install openjdk-8-jdk -y
+sudo apt-get install maven -y
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -    (wget https://pkg.jenkins.io/debian/jenkins.io.key)
+sudo nano /etc/apt/sources.list    ------>   deb https://pkg.jenkins.io/debian-stable binary/
+sudo apt update -y
+sudo apt install jenkins -y
+sudo systemctl start jenkins
+sudo systemctl enable jenkins
+sudo systemctl status jenkkins
+
+
+wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+
+sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+sudo apt-get update
+
+sudo apt-get install jenkins
+
+http://localhost:8080
+
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword (to get admin password)
+
+sudo apt-get update
+
+sudo apt-get install jenkins

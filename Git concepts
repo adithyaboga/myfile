@@ -1,0 +1,86 @@
+What is gitHub?
+
+	git version 2.9 
+	Gihub is hosting service platform. (gitLab is an alternative platform for github)
+	On git we can able to store any type of files by creating repository. 
+	It encourages teams to work together to build and edit their code content. 
+
+Create and clone the repository ?
+
+	Login to github account
+	top right side in the application we see + symbole where we can add, create new repositories. 
+	to clone the git url--> go to the repository where we can find code. click on the code we can able to see HTTPS & SSH Urls.
+	Open cmd prompt and enter the command 
+	git clone https://github.com/adithyaboga/python.git             (https url form github repository)
+	git --version 					(Gives the latest version)
+      	Note: Before Opening the cmd prompt check git is installed into your machine. else CMD prompt will not recognize and through the error. 
+
+How to create Branch
+ 	Open the github repository, the default branch created is master branch. 
+	use of creating multiple branches => Do not disturb the master bracnh code. try to copy in sub-branch
+				     => users will create sub branches for modification in the code and will try to execute
+
+Git Rebase 
+	Its a re-write commit from one branch onto another branch. 
+	it is used to merge the history of two branches on a repository 
+	
+
+Fork 
+	using this fork we can clone our code into our local repository and do the changes accordingly and submit once done 
+ 
+Change the visibility of repository :
+	 Goto  settings danger zone we can change the repository visibility. there we can chage from public to private 
+Delete the repository 
+	Goto settings danger zone we can able to see delete the repository 
+
+Error Handling 
+	windows credentials and check the login details properly to avoide errors ( While working on multiple accounts in github)
+
+	
+
+How push code into Git repository 
+         	Create our local project in our desktop directed towards a current working directory
+
+Commands 
+	git init			==>  ( initialize the repository)
+	git add .			==>  (in your bash to add all the files to the given folder.)
+	git commit -m "comments "	==>  (which adds the change to the local repository.)
+	git status			==> Check the status of the files 
+	git remote add origin 'URL'     ==>( where we need to move our local repository contect to the remote repository )
+					The HTTPS or URL is copied from the given GitHub account and set the path 
+	git remote -version		==> (where it will display the fetch and push origin) 
+	git push -u origin master 	==> ( up stream to master branch)
+		user name 
+		password authentication
+	
+	git push -f origin master 	==> Fore push to master branch 
+	git status
+
+Git Pull------ "git pull origin master"
+
+	Git command that downloads latest changes form the remote respository and automatically merges those changes in the local repository 
+	It allowes the developer to bring changes to the local code repository and to update it.
+	Git pull is simillar to git fetch followed by GIT merge
+	It is used to get files form the remote repository and put a copy in the working directory 
+	Merge conflits can occur with git pull, when 2 or more people are working on same piece of code
+
+
+Git Fetch ---" Git fetch origin"
+
+	Git Fetch command that pull down the code from the remote repository to track branches in the local repository 
+	It allows the developer to know the commits pushed by other developers before integrating them with the local repository 
+	Git Fetch is simple command 
+	It is used to Get files from the remote repository 
+	No Merging no conflits
+
+Git commit -m"text"
+	The Git commit command is used to tell git to save your changes to the local repository
+	Git commit comes before pushing
+
+Git Push -u origin master
+	The push command push the commits on the local repository to a remote repository 
+	Git push comes after git commit 
+
+
+
+	
